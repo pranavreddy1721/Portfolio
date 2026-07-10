@@ -1,0 +1,252 @@
+/* ================= AUTH PAGE (Admin Login) ================= */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: radial-gradient(ellipse at top, var(--bg-alt), var(--bg));
+}
+
+.auth-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 380px;
+}
+
+.auth-card .logo {
+  font-size: 22px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.error-msg {
+  color: #e53e3e;
+  font-size: 13px;
+  margin-bottom: 10px;
+  min-height: 16px;
+}
+
+.switch-auth {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.switch-auth a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ================= ADMIN DASHBOARD ================= */
+.dashboard {
+  max-width: 900px;
+  margin: 100px auto 40px;
+  padding: 0 24px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.nav-right a {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.nav-right a:hover { color: var(--accent); }
+
+/* ---------- Tabs ---------- */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.tab-btn:hover { color: var(--text); }
+
+.tab-btn.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.unread-badge {
+  background: #e53e3e;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 20px;
+  margin-left: 6px;
+}
+
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* ---------- Task/Project Form Card ---------- */
+.task-form-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 26px;
+  border-radius: 14px;
+  margin-bottom: 26px;
+}
+
+.task-form-card h2 {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  margin-bottom: 18px;
+  color: var(--accent);
+}
+
+.form-row {
+  display: flex;
+  gap: 14px;
+}
+
+.form-row .form-group { flex: 1; }
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-group input {
+  width: auto;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.form-actions .btn-primary,
+.form-actions .btn-outline {
+  padding: 11px 24px;
+}
+
+/* ---------- Task/Project List ---------- */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  padding: 16px 18px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.task-card.unread { border-left-color: #e53e3e; }
+
+.task-main { flex: 1; }
+
+.task-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.task-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.task-meta {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+}
+
+.badge {
+  padding: 2px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  background: var(--bg-alt);
+  color: var(--accent);
+  border: 1px solid var(--border);
+}
+
+.badge.High {
+  background: rgba(229, 62, 62, 0.12);
+  color: #e53e3e;
+  border-color: rgba(229, 62, 62, 0.3);
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.icon-btn {
+  border: 1px solid var(--border);
+  background: var(--bg-alt);
+  color: var(--text);
+  padding: 7px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.icon-btn:hover { border-color: var(--accent); color: var(--accent); }
+.icon-btn.delete:hover { border-color: #e53e3e; color: #e53e3e; }
+
+.empty-state {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 40px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+@media (max-width: 640px) {
+  .form-row { flex-direction: column; gap: 0; }
+  .task-card { flex-direction: column; }
+}

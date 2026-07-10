@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pranav Reddy | Full Stack Developer</title>
+<meta name="description" content="Portfolio of Pranav Reddy — Full Stack Developer specializing in the MERN stack." />
+
+<!-- Fonts & Icons -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-theme="dark">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-content">
+      <a href="#home" class="logo">PR<span class="dot">.</span></a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun"></i>
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <header class="hero" id="home">
+    <div id="particles-js"></div>
+
+    <div class="hero-content">
+      <p class="hero-greeting reveal">Hi, my name is</p>
+      <h1 class="hero-name reveal">Pranav Reddy</h1>
+      <h2 class="hero-role reveal">
+        I build <span id="typed-text" class="typed-text"></span><span class="typed-cursor">|</span>
+      </h2>
+      <p class="hero-desc reveal">
+        Final-year Computer Science student crafting full-stack web applications
+        with the MERN stack — from clean, responsive frontends to secure,
+        scalable backends.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        <a href="resume.pdf" class="btn btn-ghost" download>
+          <i class="fa-solid fa-download"></i> Resume
+        </a>
+      </div>
+
+      <div class="hero-socials reveal">
+        <a href="https://github.com/pranavreddy1721" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/pranavreddy1721" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:pranavreddy1721@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+       <a href="https://leetcode.com/yourhandle" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+        <a href="https://www.instagram.com/__pranav1721__/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </header>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="about" id="about">
+    <p class="section-tag reveal">Get To Know</p>
+    <h2 class="section-title reveal">About Me</h2>
+
+    <div class="about-content">
+      <div class="about-photo reveal">
+        <div class="photo-frame">
+          <img src="images/profile.jpg" alt="Pranav Reddy" onerror="this.parentElement.classList.add('photo-placeholder')" />
+        </div>
+      </div>
+
+      <div class="about-text reveal">
+        <p>
+          I'm a final-year B.Tech Computer Science student specializing in IoT,
+          Cyber Security, and Blockchain, with a strong focus on full-stack web
+          development using the <strong>MERN stack</strong>.
+        </p>
+        <p>
+          I've completed a Web Development internship at Cognifyz Technologies,
+          building React/Node modules, integrating RESTful APIs, and setting up
+          CI/CD pipelines with automated testing. Outside of coursework, I build
+          complete, deployed full-stack projects — from task managers with JWT
+          auth to admin-driven CMS platforms.
+        </p>
+        <p>
+          I care about clean code, practical solutions, and shipping things that
+          actually work end to end — not just in a local dev environment.
+        </p>
+
+        <div class="about-stats">
+          <div class="stat-card">
+            <h3>5+</h3>
+            <p>Full-Stack Projects</p>
+          </div>
+          <div class="stat-card">
+            <h3>1</h3>
+            <p>Internship Completed</p>
+          </div>
+          <div class="stat-card">
+            <h3>MERN</h3>
+            <p>Primary Stack</p>
+          </div>
+        </div>
+
+        <a href="resume.pdf" class="btn btn-primary" download>
+          <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="skills" id="skills">
+    <p class="section-tag reveal">What I Know</p>
+    <h2 class="section-title reveal">Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+        <h3>Frontend</h3>
+        <div class="skill-tags">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React.js</span><span>Tailwind CSS</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+        <h3>Backend</h3>
+        <div class="skill-tags">
+          <span>Node.js</span><span>Express.js</span><span>REST APIs</span><span>JWT Auth</span><span>Microservices</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+        <h3>Database</h3>
+        <div class="skill-tags">
+          <span>MongoDB</span><span>Mongoose</span><span>MySQL</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon"><i class="fa-solid fa-toolbox"></i></div>
+        <h3>Tools & Platforms</h3>
+        <div class="skill-tags">
+          <span>Git</span><span>GitHub</span><span>Render</span><span>Cloudflare Pages</span><span>CI/CD (Jest)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="projects" id="projects">
+    <p class="section-tag reveal">My Work</p>
+    <h2 class="section-title reveal">Projects</h2>
+
+    <div class="projects-grid" id="projectsGrid">
+      <p class="loading-text" id="loadingText">Loading projects...</p>
+    </div>
+
+    <div class="projects-cta reveal">
+      <a href="https://github.com/pranavreddy1721" target="_blank" rel="noopener" class="btn btn-outline">
+        <i class="fa-brands fa-github"></i> See More on GitHub
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="contact" id="contact">
+    <p class="section-tag reveal">Get In Touch</p>
+    <h2 class="section-title reveal">Contact Me</h2>
+
+    <div class="contact-content">
+      <div class="contact-info reveal">
+        <p>
+          Have a project in mind, an opportunity to discuss, or just want to
+          say hi? My inbox is always open.
+        </p>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>pranavreddy1721@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Maharashtra, India</span>
+        </div>
+
+        <div class="contact-socials">
+          <a href="https://github.com/pranavreddy1721" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/pranavreddy1721" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <form id="contactForm" class="contact-form reveal">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
+        </div>
+        <p class="form-status" id="formStatus"></p>
+        <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>&copy; 2026 Pranav Reddy. Built with HTML, CSS, JavaScript, Node.js &amp; MongoDB.</p>
+    <div class="footer-socials">
+      <a href="https://github.com/pranavreddy1721" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/pranavreddy1721" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:pranavreddy1721@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <a href="admin-login.html" class="admin-fab" title="Admin Login"><i class="fa-solid fa-lock"></i></a>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
