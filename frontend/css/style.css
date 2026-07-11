@@ -352,6 +352,7 @@ body[data-theme="light"] .theme-toggle .fa-moon { opacity: 0; transform: rotate(
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 15%;
   border-radius: 16px;
 }
 
