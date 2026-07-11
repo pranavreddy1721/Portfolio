@@ -5,6 +5,7 @@
     "techStack": ["React", "Node.js", "Express", "MongoDB", "JWT"],
     "githubUrl": "https://github.com/pranavreddy1721/alumni-portal",
     "liveUrl": "https://alumniportal.pages.dev/",
+    "imageUrl": "screenshots/alumni-portal.png",
     "featured": true
   },
   {
@@ -13,6 +14,7 @@
     "techStack": ["React", "TypeScript", "Vite", "Tailwind CSS", "EmailJS"],
     "githubUrl": "https://github.com/pranavreddy1721/dental",
     "liveUrl": "https://chouguledentalclinic.pages.dev/",
+    "imageUrl": "screenshots/dental-clinic.png",
     "featured": true
   },
   {
@@ -21,6 +23,7 @@
     "techStack": ["Node.js", "Express", "MongoDB", "JWT", "JavaScript"],
     "githubUrl": "https://github.com/pranavreddy1721/task-manager",
     "liveUrl": "https://task-manager-17.pages.dev/",
+    "imageUrl": "screenshots/task-manager.png",
     "featured": true
   },
   {
@@ -29,6 +32,7 @@
     "techStack": ["React", "JavaScript", "Tailwind CSS"],
     "githubUrl": "https://github.com/pranavreddy1721/ResumePro",
     "liveUrl": "https://resume-pro-18.pages.dev/",
+    "imageUrl": "screenshots/resume-pro.png",
     "featured": false
   }
 ]

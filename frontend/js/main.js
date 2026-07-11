@@ -165,6 +165,17 @@ async function loadProjects() {
         .join("");
 
       card.innerHTML = `
+        <div class="laptop-mockup">
+          <div class="laptop-top"><span class="laptop-cam"></span></div>
+          <div class="laptop-screen">
+            ${
+              project.imageUrl
+                ? `<img src="${escapeHtml(project.imageUrl)}" alt="${escapeHtml(project.title)} screenshot" loading="lazy" onerror="this.closest('.laptop-screen').innerHTML='<div class=&quot;laptop-screen-placeholder&quot;><i class=&quot;fa-solid fa-code&quot;></i></div>'" />`
+                : `<div class="laptop-screen-placeholder"><i class="fa-solid fa-code"></i></div>`
+            }
+          </div>
+          <div class="laptop-base"></div>
+        </div>
         <div class="project-card-body">
           <div class="project-card-title">
             ${escapeHtml(project.title)}
