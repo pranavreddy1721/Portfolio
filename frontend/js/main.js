@@ -112,13 +112,40 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// ================= PROJECTS: LOAD & RENDER =================
+// ================= PROJECTS: LOAD & RENDER (static JSON) =================
+
+// Maps known tech names to Devicon classes for nice colored logos.
+// Falls back to a generic code icon if not found.
+const TECH_ICON_MAP = {
+  "React": "devicon-react-original colored",
+  "Node.js": "devicon-nodejs-plain colored",
+  "Express": "devicon-express-original",
+  "MongoDB": "devicon-mongodb-plain colored",
+  "JavaScript": "devicon-javascript-plain colored",
+  "TypeScript": "devicon-typescript-plain colored",
+  "Tailwind CSS": "devicon-tailwindcss-original colored",
+  "Vite": "devicon-vitejs-plain colored",
+  "HTML5": "devicon-html5-plain colored",
+  "CSS3": "devicon-css3-plain colored",
+  "Git": "devicon-git-plain colored",
+};
+
+function techIconHtml(tech) {
+  const iconClass = TECH_ICON_MAP[tech];
+  if (iconClass) {
+    return `<i class="${iconClass}"></i>`;
+  }
+  return `<i class="fa-solid fa-code"></i>`;
+}
+
 async function loadProjects() {
   const grid = document.getElementById("projectsGrid");
   const loadingText = document.getElementById("loadingText");
 
   try {
-    const projects = await apiRequest("/projects", "GET");
+    const response = await fetch("projects/projects.json");
+    if (!response.ok) throw new Error("Could not load projects.json");
+    const projects = await response.json();
 
     if (!projects.length) {
       grid.innerHTML = `<p class="loading-text">Projects coming soon — check back shortly!</p>`;
@@ -127,20 +154,17 @@ async function loadProjects() {
 
     grid.innerHTML = "";
 
-    projects.forEach((project) => {
+    projects.forEach((project, index) => {
       const card = document.createElement("div");
-      card.className = "project-card";
+      // Alternate slide-in direction per card for a "slides" style entrance
+      const slideClass = index % 2 === 0 ? "reveal-left" : "reveal-right";
+      card.className = `project-card ${slideClass}`;
 
       const techTags = (project.techStack || [])
-        .map((tech) => `<span class="tech-tag">${escapeHtml(tech)}</span>`)
+        .map((tech) => `<span class="tech-tag">${techIconHtml(tech)} ${escapeHtml(tech)}</span>`)
         .join("");
 
       card.innerHTML = `
-        ${
-          project.imageUrl
-            ? `<img src="${escapeHtml(project.imageUrl)}" alt="${escapeHtml(project.title)}" class="project-card-img" />`
-            : ""
-        }
         <div class="project-card-body">
           <div class="project-card-title">
             ${escapeHtml(project.title)}
@@ -158,15 +182,22 @@ async function loadProjects() {
       grid.appendChild(card);
     });
 
-    // Enable tilt effect on the newly rendered cards
+    // Enable 3D tilt effect on the newly rendered cards
     if (typeof VanillaTilt !== "undefined") {
       VanillaTilt.init(document.querySelectorAll(".project-card"), {
-        max: 8,
+        max: 10,
         speed: 400,
         glare: true,
-        "max-glare": 0.15,
-        scale: 1.02,
+        "max-glare": 0.2,
+        scale: 1.03,
       });
+    }
+
+    // Apply alternating slide-in scroll reveal now that cards exist
+    if (typeof ScrollReveal !== "undefined") {
+      const sr = ScrollReveal({ duration: 700, easing: "cubic-bezier(0.5, 0, 0, 1)", reset: false });
+      sr.reveal(".reveal-left", { origin: "left", distance: "50px", interval: 100 });
+      sr.reveal(".reveal-right", { origin: "right", distance: "50px", interval: 100 });
     }
   } catch (error) {
     if (loadingText) {

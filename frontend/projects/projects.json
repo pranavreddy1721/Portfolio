@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Alumni Association Platform",
+    "description": "A full-stack web platform connecting students, alumni, and teachers — enabling mentorship, job referrals, event coordination, and real-time networking under one roof.",
+    "techStack": ["React", "Node.js", "Express", "MongoDB", "JWT"],
+    "githubUrl": "https://github.com/pranavreddy1721/alumni-portal",
+    "liveUrl": "https://alumniportal.pages.dev/",
+    "featured": true
+  },
+  {
+    "title": "Chougule Dental Clinic Website",
+    "description": "A production-deployed clinic website with bilingual (English/Marathi) support, dark/light mode, and integrated appointment booking — built for real-world clinical use.",
+    "techStack": ["React", "TypeScript", "Vite", "Tailwind CSS", "EmailJS"],
+    "githubUrl": "https://github.com/pranavreddy1721/dental",
+    "liveUrl": "https://chouguledentalclinic.pages.dev/",
+    "featured": true
+  },
+  {
+    "title": "Task Manager",
+    "description": "A full CRUD task management app with secure JWT authentication and bcrypt password hashing — every user only ever sees and manages their own tasks.",
+    "techStack": ["Node.js", "Express", "MongoDB", "JWT", "JavaScript"],
+    "githubUrl": "https://github.com/pranavreddy1721/task-manager",
+    "liveUrl": "https://task-manager-17.pages.dev/",
+    "featured": true
+  },
+  {
+    "title": "ResumePro",
+    "description": "A resume-building tool designed to help job seekers create clean, professional, ATS-friendly resumes quickly.",
+    "techStack": ["React", "JavaScript", "Tailwind CSS"],
+    "githubUrl": "https://github.com/pranavreddy1721/ResumePro",
+    "liveUrl": "https://resume-pro-18.pages.dev/",
+    "featured": false
+  }
+]

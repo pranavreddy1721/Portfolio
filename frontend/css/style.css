@@ -327,6 +327,8 @@ body[data-theme="light"] .theme-toggle .fa-moon { opacity: 0; transform: rotate(
   max-width: 1100px;
   margin: 0 auto;
   padding: 100px 24px;
+  position: relative;
+  overflow: hidden;
 }
 
 .about-content {
@@ -409,6 +411,8 @@ body[data-theme="light"] .theme-toggle .fa-moon { opacity: 0; transform: rotate(
   max-width: 1100px;
   margin: 0 auto;
   padding: 60px 24px 100px;
+  position: relative;
+  overflow: hidden;
 }
 
 .skills-grid {
@@ -470,6 +474,8 @@ body[data-theme="light"] .theme-toggle .fa-moon { opacity: 0; transform: rotate(
   max-width: 1100px;
   margin: 0 auto;
   padding: 60px 24px 100px;
+  position: relative;
+  overflow: hidden;
 }
 
 .projects-grid {
@@ -732,7 +738,15 @@ body[data-theme="light"] .theme-toggle .fa-moon { opacity: 0; transform: rotate(
 }
 
 /* ================= REVEAL (fallback if JS disabled) ================= */
-.reveal { opacity: 1; }
+.reveal, .reveal-left, .reveal-right { opacity: 1; }
+
+.tech-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.tech-tag i { font-size: 13px; }
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
@@ -765,6 +779,76 @@ body[data-theme="light"] .theme-toggle .fa-moon { opacity: 0; transform: rotate(
   .section-title { font-size: 26px; }
 
   .about-stats { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ================= DECORATIVE SHAPES ================= */
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.35;
+  z-index: 0;
+  pointer-events: none;
+  animation: floatShape 10s ease-in-out infinite;
+}
+
+body[data-theme="light"] .shape { opacity: 0.2; }
+
+.shape-about-1 {
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: -100px;
+  background: var(--accent);
+}
+
+.shape-about-2 {
+  width: 200px;
+  height: 200px;
+  bottom: -60px;
+  right: -80px;
+  background: var(--accent-2);
+  animation-delay: 2s;
+}
+
+.shape-skills-1 {
+  width: 300px;
+  height: 300px;
+  top: 20%;
+  right: -120px;
+  background: var(--accent-2);
+}
+
+.shape-projects-1 {
+  width: 280px;
+  height: 280px;
+  bottom: 0;
+  left: -100px;
+  background: var(--accent);
+  animation-delay: 1s;
+}
+
+@keyframes floatShape {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(20px, -25px) scale(1.08); }
+}
+
+.about-content,
+.skills-grid,
+.slider,
+.section-tag,
+.section-title {
+  position: relative;
+  z-index: 1;
+}
+
+/* Skill cards get a subtle 3D tilt via VanillaTilt (JS-driven), plus a hover pop */
+.skill-card {
+  transform-style: preserve-3d;
+}
+
+@media (max-width: 640px) {
+  .shape { display: none; }
 }
 
 @media (max-width: 480px) {
