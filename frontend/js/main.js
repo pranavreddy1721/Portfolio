@@ -100,6 +100,41 @@ if (typeof ScrollReveal !== "undefined") {
   });
 
   sr.reveal(".reveal", { interval: 80, origin: "bottom" });
+  sr.reveal(".tech-item", { interval: 40, distance: "20px", origin: "bottom", scale: 0.9 });
+}
+
+// ================= STAT COUNT-UP ANIMATION =================
+const statNumbers = document.querySelectorAll(".stat-card h3[data-count]");
+
+if (statNumbers.length && "IntersectionObserver" in window) {
+  const countObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+
+        const el = entry.target;
+        const target = parseInt(el.dataset.count, 10);
+        const suffix = el.dataset.suffix || "";
+        const duration = 1200;
+        const startTime = performance.now();
+
+        function tick(now) {
+          const progress = Math.min((now - startTime) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+          const value = Math.round(eased * target);
+          el.textContent = value + suffix;
+
+          if (progress < 1) requestAnimationFrame(tick);
+        }
+
+        requestAnimationFrame(tick);
+        countObserver.unobserve(el);
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  statNumbers.forEach((el) => countObserver.observe(el));
 }
 
 // ================= NAVBAR SCROLL SHADOW =================

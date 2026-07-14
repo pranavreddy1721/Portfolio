@@ -1,0 +1,106 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7C5CFF"/>
+      <stop offset="50%" stop-color="#B24CE0"/>
+      <stop offset="100%" stop-color="#E0508A"/>
+    </linearGradient>
+    <linearGradient id="topBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5B6CFF"/>
+      <stop offset="50%" stop-color="#B24CE0"/>
+      <stop offset="100%" stop-color="#E0508A"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="30%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="85%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#E0508A" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#E0508A" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="cardShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="26" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0b0e1a"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <circle cx="60" cy="560" r="2" fill="#ffffff" opacity="0.5"/>
+  <circle cx="130" cy="490" r="1.5" fill="#ffffff" opacity="0.4"/>
+  <circle cx="90" cy="120" r="1.5" fill="#ffffff" opacity="0.35"/>
+  <circle cx="1120" cy="90" r="2" fill="#ffffff" opacity="0.4"/>
+  <circle cx="1080" cy="200" r="1.5" fill="#ffffff" opacity="0.3"/>
+  <circle cx="1150" cy="500" r="1.5" fill="#ffffff" opacity="0.35"/>
+
+  <g transform="translate(70, 110)">
+    <rect x="0" y="0" width="52" height="52" rx="14" fill="url(#brandGrad)"/>
+    <text x="26" y="35" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="26" font-weight="800" fill="#ffffff">RP</text>
+    <text x="66" y="34" font-family="Poppins, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">Resume<tspan fill="#c893ff">Pro</tspan></text>
+  </g>
+
+  <text x="70" y="240" font-family="Poppins, Arial, sans-serif" font-size="64" font-weight="800" fill="#ffffff">Build your</text>
+  <text x="70" y="315" font-family="Poppins, Arial, sans-serif" font-size="64" font-weight="800" fill="url(#brandGrad)">career story</text>
+
+  <text x="70" y="365" font-family="Inter, Arial, sans-serif" font-size="19" fill="#9aa5c9">Craft a clean, ATS-friendly resume with a</text>
+  <text x="70" y="392" font-family="Inter, Arial, sans-serif" font-size="19" fill="#9aa5c9">live preview as you go.</text>
+
+  <g transform="translate(70, 440)">
+    <rect x="0" y="0" width="182" height="52" rx="10" fill="url(#brandGrad)"/>
+    <text x="91" y="33" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Create your resume</text>
+  </g>
+
+  <g transform="translate(70, 520)">
+    <rect x="0" y="0" width="88" height="26" rx="13" fill="#161a2c" stroke="#2a2f45"/>
+    <text x="44" y="17" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#c893ff">ATS: 98%</text>
+    <rect x="98" y="0" width="118" height="26" rx="13" fill="#161a2c" stroke="#2a2f45"/>
+    <text x="157" y="17" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#7fd8a8">Live preview</text>
+  </g>
+
+  <g transform="translate(660, 55) rotate(3 270 260)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="480" height="560" rx="16" fill="#ffffff"/>
+    <rect x="0" y="0" width="480" height="10" rx="5" fill="url(#topBar)"/>
+
+    <text x="36" y="62" font-family="Poppins, Arial, sans-serif" font-size="30" font-weight="800" fill="#141414">Pranav Reddy</text>
+    <text x="36" y="86" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5b6cff">B.Tech Computer Science Student | Full Stack Developer</text>
+
+    <text x="36" y="118" font-family="Inter, Arial, sans-serif" font-size="11.5" fill="#666">pranavreddy1721@gmail.com &#8226; linkedin.com/in/pranavreddy1721</text>
+
+    <rect x="36" y="140" width="408" height="1" fill="#e6e6e6"/>
+
+    <text x="36" y="168" font-family="Poppins, Arial, sans-serif" font-size="13" font-weight="700" fill="#5b6cff" letter-spacing="1">CAREER OBJECTIVE</text>
+    <rect x="36" y="176" width="70" height="2" fill="#5b6cff"/>
+    <rect x="36" y="192" width="408" height="7" rx="3" fill="#ececec"/>
+    <rect x="36" y="206" width="408" height="7" rx="3" fill="#ececec"/>
+    <rect x="36" y="220" width="300" height="7" rx="3" fill="#ececec"/>
+
+    <text x="36" y="256" font-family="Poppins, Arial, sans-serif" font-size="13" font-weight="700" fill="#e0508a" letter-spacing="1">WORK EXPERIENCE</text>
+    <rect x="36" y="264" width="70" height="2" fill="#e0508a"/>
+    <text x="36" y="288" font-family="Poppins, Arial, sans-serif" font-size="14" font-weight="700" fill="#1a1a1a">Web Development Intern</text>
+    <text x="36" y="304" font-family="Inter, Arial, sans-serif" font-size="11.5" fill="#5b6cff">Cognifyz Technologies</text>
+    <rect x="36" y="316" width="408" height="6" rx="3" fill="#ececec"/>
+    <rect x="36" y="328" width="408" height="6" rx="3" fill="#ececec"/>
+
+    <text x="36" y="364" font-family="Poppins, Arial, sans-serif" font-size="13" font-weight="700" fill="#7c5cff" letter-spacing="1">TECHNICAL PROJECTS</text>
+    <rect x="36" y="372" width="70" height="2" fill="#7c5cff"/>
+    <text x="36" y="396" font-family="Poppins, Arial, sans-serif" font-size="14" font-weight="700" fill="#1a1a1a">Task Manager</text>
+    <rect x="36" y="406" width="408" height="6" rx="3" fill="#ececec"/>
+    <text x="36" y="434" font-family="Poppins, Arial, sans-serif" font-size="14" font-weight="700" fill="#1a1a1a">Alumni Association Platform</text>
+    <rect x="36" y="444" width="408" height="6" rx="3" fill="#ececec"/>
+
+    <text x="36" y="480" font-family="Poppins, Arial, sans-serif" font-size="13" font-weight="700" fill="#5b6cff" letter-spacing="1">SKILLS</text>
+    <rect x="36" y="488" width="70" height="2" fill="#5b6cff"/>
+
+    <rect x="36" y="500" width="62" height="24" rx="12" fill="#eef0ff"/>
+    <text x="67" y="516" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#5b6cff">React</text>
+    <rect x="104" y="500" width="72" height="24" rx="12" fill="#fdeef7"/>
+    <text x="140" y="516" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#e0508a">Node.js</text>
+    <rect x="182" y="500" width="82" height="24" rx="12" fill="#f2edff"/>
+    <text x="223" y="516" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#7c5cff">MongoDB</text>
+    <rect x="270" y="500" width="60" height="24" rx="12" fill="#eef0ff"/>
+    <text x="300" y="516" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#5b6cff">JWT</text>
+
+    <text x="36" y="548" font-family="Inter, Arial, sans-serif" font-size="10.5" fill="#999">github.com/pranavreddy1721</text>
+  </g>
+</svg>
