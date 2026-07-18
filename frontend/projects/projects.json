@@ -13,7 +13,7 @@
     "description": "A production-deployed clinic website with bilingual (English/Marathi) support, dark/light mode, and integrated appointment booking — built for real-world clinical use.",
     "techStack": ["React", "TypeScript", "Vite", "Tailwind CSS", "EmailJS"],
     "githubUrl": "https://github.com/pranavreddy1721/dental",
-    "liveUrl": "https://chouguledentalclinic.pages.dev/",
+    "liveUrl": "https://chouguledentalclinic1.pages.dev/",
     "imageUrl": "screenshots/dental-clinic.png",
     "featured": true
   },
